@@ -117,11 +117,7 @@ function App() {
           </p>
           <Row xs={1} md={2} data-aos="flip-up">
             <Col className="card-col">
-              <Card
-                onClick={handleCard1}
-                style={{ cursor: "pointer" }}
-                className="showcase-panel"
-              >
+              <Card onClick={handleCard1} style={{ cursor: "pointer" }}>
                 <Card.Img variant="top" src={Project1} />
                 <Card.Body>
                   <Card.Title>
@@ -138,11 +134,7 @@ function App() {
               </Card>
             </Col>
             <Col className="card-col">
-              <Card
-                onClick={handleCard2}
-                style={{ cursor: "pointer" }}
-                className="showcase-panel"
-              >
+              <Card onClick={handleCard2} style={{ cursor: "pointer" }}>
                 <Card.Img variant="top" src={Project2} />
                 <Card.Body>
                   <Card.Title>
@@ -159,11 +151,7 @@ function App() {
               </Card>
             </Col>
             <Col className="card-col">
-              <Card
-                onClick={handleCard3}
-                style={{ cursor: "pointer" }}
-                className="showcase-panel"
-              >
+              <Card onClick={handleCard3} style={{ cursor: "pointer" }}>
                 <Card.Img variant="top" src={Project4} />
                 <Card.Body>
                   <Card.Title>
@@ -180,11 +168,7 @@ function App() {
               </Card>
             </Col>
             <Col className="card-col">
-              <Card
-                onClick={handleCard4}
-                style={{ cursor: "pointer" }}
-                className="showcase-panel"
-              >
+              <Card onClick={handleCard4} style={{ cursor: "pointer" }}>
                 <Card.Img variant="top" src={Project5} />
                 <Card.Body>
                   <Card.Title>
