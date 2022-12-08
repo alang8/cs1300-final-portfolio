@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
           <Container>
             <Navbar.Brand href="#home">
               <b>Lucky Lion's Portfolio</b>
@@ -76,6 +76,31 @@ function App() {
                 <a href="https://cs.brown.edu/">@Brown University</a>.
               </h5>
             </p>
+            <div className="animation">
+              <div class="combined">
+                <div class="plane">
+                  <div class="wingRight"></div>
+                  <div class="wingLeft"></div>
+                  <div class="bottom"></div>
+                  <div class="top"></div>
+                  <div class="middle"></div>
+                </div>
+                <div class="clouds">
+                  <div class="cloudOne"></div>
+                  <div class="cloudTwo"></div>
+                  <div class="cloudThree"></div>
+                </div>
+              </div>
+            </div>
+            <h5 className="line2">
+              UX design is like building a paper airplane. One's project can
+              take flight with a few simple folds and a little bit of
+              creativity.
+            </h5>
+            <h5 className="line">
+              “Squint at the world. You will see more, by seeing less.” ― John
+              Maeda, <i>The Laws of Simplicity</i>
+            </h5>
           </Container>
         </section>
         <hr className="line"></hr>
@@ -85,6 +110,9 @@ function App() {
               <h2>
                 <b>Check out some of my projects!</b>
               </h2>
+              <h5 className="line">
+                Click on the cards below to see more about each project.
+              </h5>
             </p>
             <Row xs={1} md={2}>
               <Col className="card-col">
@@ -203,6 +231,7 @@ function App() {
             <SocialIcon url="instagram.com" className="social" />{" "}
           </Container>
         </section>
+        <section className="footer">Copyright © Lucky Lion 2022</section>
       </div>
     </>
   );
