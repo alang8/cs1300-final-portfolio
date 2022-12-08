@@ -22,8 +22,12 @@ import "aos/dist/aos.css";
 // 5. https://luckylion777.github.io/project-5-development/
 
 function App() {
+  // Initialize AOS
+  // Source: https://michalsnik.github.io/aos/
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1500,
+    });
   }, []);
 
   const handleCard1 = () => {
