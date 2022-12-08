@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
 import Project1 from "./assets/project1.png";
 import Project2 from "./assets/project2.png";
 import Project4 from "./assets/project4.png";
@@ -27,6 +26,22 @@ function App() {
       duration: 1200,
     });
   }, []);
+
+  const handleCard1 = () => {
+    window.open("https://cs1300-personas-storyboarding.pages.dev/");
+  };
+
+  const handleCard2 = () => {
+    window.open("https://cs1300-responsive-redesign.pages.dev/");
+  };
+
+  const handleCard3 = () => {
+    window.open("https://cs1300-iterative-design-ewz.pages.dev/");
+  };
+
+  const handleCard4 = () => {
+    window.open("https://luckylion777.github.io/project-5-development/");
+  };
 
   return (
     <>
@@ -50,11 +65,11 @@ function App() {
           <Container>
             <p>
               <h1>
-                👋 <b>Greetings, I'm Lucky Lion!</b> 🦁
+                👋 <b>Greetings, I'm Lucky Lion!</b> 🍀
               </h1>
               <h2 className="line">
                 UX designer passionate about solving relatable problems through
-                fun and accessible experiences.{" "}
+                simple and accessible experiences.{" "}
               </h2>
               <h5 className="line">
                 Currently studying computer science and economics{" "}
@@ -73,107 +88,91 @@ function App() {
             </p>
             <Row xs={1} md={2}>
               <Col className="card-col">
-                <Card className="showcase-panel" data-aos="flip-left">
+                <Card
+                  onClick={handleCard1}
+                  style={{ cursor: "pointer" }}
+                  className="showcase-panel"
+                  data-aos="flip-left"
+                >
                   <Card.Img variant="top" src={Project1} />
                   <Card.Body>
                     <Card.Title>
                       <b>Personas and Storyboarding</b>
                     </Card.Title>
                     <Card.Text>
-                      This CSCI 1300 project asks students to research a public
-                      interface and analyze how users interact with it. My
-                      interface of choice will be the drink machines in the
-                      Ratty, which many students use to dispense their beverages
-                      every day. These machines are a variant of the "Coca-Cola
-                      Freestyle" machines found in commercial restaurant chains.
+                      This project asked students to research a public interface
+                      and analyze how users interact with it in order to design
+                      an improved version. My interface of choice will be the
+                      drink machines in the Ratty dining hall, which many
+                      students use to dispense their beverages every day.
                     </Card.Text>
                   </Card.Body>
-                  <Button
-                    className="card-button"
-                    variant="outline-primary"
-                    href="https://cs1300-personas-storyboarding.pages.dev/"
-                  >
-                    <b>Explore</b>
-                  </Button>{" "}
                 </Card>
               </Col>
               <Col className="card-col">
-                <Card className="showcase-panel" data-aos="flip-right">
+                <Card
+                  onClick={handleCard2}
+                  style={{ cursor: "pointer" }}
+                  className="showcase-panel"
+                  data-aos="flip-right"
+                >
                   <Card.Img variant="top" src={Project2} />
                   <Card.Body>
                     <Card.Title>
                       <b>Responsive Redesign</b>
                     </Card.Title>
                     <Card.Text>
-                      This CSCI 1300 project asks students to practice the
-                      workflow of redesigning a simple website. The website I
+                      This project asked students to follow the workflow of
+                      redesigning and remaking a public website. The website I
                       chose was the official website of D&A House of Pizza, my
-                      favorite local pizza place that I used to live next to. I
-                      have never visited their website before this project, but
-                      looking at it now, I think that a lot of improvements
-                      could be made.
+                      favorite local pizza place that I used to live next to.
+                      Their original site had an extremely outdated design.
                     </Card.Text>
                   </Card.Body>
-                  <Button
-                    className="card-button"
-                    variant="outline-primary"
-                    href="https://cs1300-responsive-redesign.pages.dev/"
-                  >
-                    <b>Explore</b>
-                  </Button>{" "}
                 </Card>
               </Col>
               <Col className="card-col">
-                <Card className="showcase-panel" data-aos="flip-left">
+                <Card
+                  onClick={handleCard3}
+                  style={{ cursor: "pointer" }}
+                  className="showcase-panel"
+                  data-aos="flip-left"
+                >
                   <Card.Img variant="top" src={Project4} />
                   <Card.Body>
                     <Card.Title>
                       <b>Iterative Design and Evaluation</b>
                     </Card.Title>
                     <Card.Text>
-                      This CSCI 1300 project asks students to iteratively design
-                      an application for a startup. My team chose Avocademy, a
+                      This project asked students to iteratively design an
+                      application for a startup. My team chose Avocademy, a
                       startup dedicated to teaching people UI/UX design. They
                       offer an eight-week personalized UI/UX curriculum,
-                      mentoring services, and portfolio support. We chose this
-                      startup because we are all current students in a UI/UX
-                      course at Brown, which allows us to integrate our
-                      perspectives into the project.
+                      mentoring services, and portfolio support.
                     </Card.Text>
                   </Card.Body>
-                  <Button
-                    className="card-button"
-                    variant="outline-primary"
-                    href="https://cs1300-iterative-design-ewz.pages.dev/"
-                  >
-                    <b>Explore</b>
-                  </Button>{" "}
                 </Card>
               </Col>
               <Col className="card-col">
-                <Card className="showcase-panel" data-aos="flip-right">
+                <Card
+                  onClick={handleCard4}
+                  style={{ cursor: "pointer" }}
+                  className="showcase-panel"
+                  data-aos="flip-right"
+                >
                   <Card.Img variant="top" src={Project5} />
                   <Card.Body>
                     <Card.Title>
                       <b>Development</b>
                     </Card.Title>
                     <Card.Text>
-                      This CSCI 1300 project asks students to develop a web
-                      application of their choice with React. I chose to develop
-                      a wishlist tracking website for Genshin Impact players.
-                      One of the main factors that made this game so popular was
-                      its cast of characters, and I thought it would be fun and
-                      helpful to have a platform to track which characters you
-                      are saving for.
+                      This project asks students to develop a web application of
+                      their choice. I chose to develop a wishlist website for
+                      Genshin Impact players so they track can which characters
+                      to save for. One important aspect of the site is that it
+                      pulls data from the game API for easy future updates.
                     </Card.Text>
                   </Card.Body>
-                  <Button
-                    className="card-button"
-                    variant="outline-primary"
-                    href="https://luckylion777.github.io/project-5-development/"
-                  >
-                    <b>Explore</b>
-                  </Button>{" "}
                 </Card>
               </Col>
             </Row>

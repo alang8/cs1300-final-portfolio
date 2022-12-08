@@ -29,11 +29,6 @@
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.line {
-  width: 90%;
-  margin: auto;
-}
-
 .button {
   align-items: center;
 }
@@ -50,14 +45,18 @@
 }
 
 .line {
+  width: 90%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline; }
+
 
 #about {
   margin-left: 15%;
