@@ -14,6 +14,7 @@ import { SocialIcon } from "react-social-icons";
 import { AiOutlineFilePdf } from "react-icons/ai";
 import { useEffect } from "react";
 import AOS from "aos";
+import "aos/dist/aos.css";
 
 // 1. https://cs1300-personas-storyboarding.pages.dev/
 // 2. https://cs1300-responsive-redesign.pages.dev/
@@ -22,9 +23,7 @@ import AOS from "aos";
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
+    AOS.init();
   }, []);
 
   const handleCard1 = () => {
@@ -106,7 +105,7 @@ function App() {
         <hr className="line"></hr>
         <section className="section" id="projects">
           <Container>
-            <p>
+            <p data-aos="fade-up">
               <h2>
                 <b>Check out some of my projects!</b>
               </h2>
@@ -120,7 +119,7 @@ function App() {
                   onClick={handleCard1}
                   style={{ cursor: "pointer" }}
                   className="showcase-panel"
-                  data-aos="flip-left"
+                  data-aos="flip-up"
                 >
                   <Card.Img variant="top" src={Project1} />
                   <Card.Body>
@@ -142,7 +141,7 @@ function App() {
                   onClick={handleCard2}
                   style={{ cursor: "pointer" }}
                   className="showcase-panel"
-                  data-aos="flip-right"
+                  data-aos="flip-up"
                 >
                   <Card.Img variant="top" src={Project2} />
                   <Card.Body>
@@ -164,7 +163,7 @@ function App() {
                   onClick={handleCard3}
                   style={{ cursor: "pointer" }}
                   className="showcase-panel"
-                  data-aos="flip-left"
+                  data-aos="flip-up"
                 >
                   <Card.Img variant="top" src={Project4} />
                   <Card.Body>
@@ -186,7 +185,7 @@ function App() {
                   onClick={handleCard4}
                   style={{ cursor: "pointer" }}
                   className="showcase-panel"
-                  data-aos="flip-right"
+                  data-aos="flip-up"
                 >
                   <Card.Img variant="top" src={Project5} />
                   <Card.Body>
@@ -209,7 +208,7 @@ function App() {
         <hr className="line"></hr>
         <section className="section" id="contact">
           <Container>
-            <p>
+            <p data-aos="fade-up">
               <h2>
                 <b>Let's Connect!</b>
               </h2>
@@ -225,10 +224,22 @@ function App() {
                 </a>
               </h5>
             </p>
-            <SocialIcon url="https://linkedin.com" className="social" />{" "}
-            <SocialIcon url="https://github.com" className="social" />{" "}
-            <SocialIcon url="mailto://" className="social" />{" "}
-            <SocialIcon url="instagram.com" className="social" />{" "}
+            <SocialIcon
+              url="https://linkedin.com"
+              className="social"
+              data-aos="zoom-in"
+            />{" "}
+            <SocialIcon
+              url="https://github.com"
+              className="social"
+              data-aos="zoom-in"
+            />{" "}
+            <SocialIcon url="mailto://" className="social" data-aos="zoom-in" />{" "}
+            <SocialIcon
+              url="instagram.com"
+              className="social"
+              data-aos="zoom-in"
+            />{" "}
           </Container>
         </section>
         <section className="footer">Copyright © Lucky Lion 2022</section>
