@@ -27,7 +27,6 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1500,
-      once: true,
     });
   }, []);
 
@@ -114,17 +113,16 @@ function App() {
               <h2>
                 <b>Check out some of my projects!</b>
               </h2>
-              <h5 className="line">
+              <h5 className="line" style={{ marginBottom: 30 }}>
                 Click on the cards below to see more about each project.
               </h5>
             </p>
-            <Row xs={1} md={2}>
+            <Row xs={1} md={2} data-aos="flip-up">
               <Col className="card-col">
                 <Card
                   onClick={handleCard1}
                   style={{ cursor: "pointer" }}
                   className="showcase-panel"
-                  data-aos="flip-up"
                 >
                   <Card.Img variant="top" src={Project1} />
                   <Card.Body>
@@ -146,7 +144,6 @@ function App() {
                   onClick={handleCard2}
                   style={{ cursor: "pointer" }}
                   className="showcase-panel"
-                  data-aos="flip-up"
                 >
                   <Card.Img variant="top" src={Project2} />
                   <Card.Body>
@@ -168,7 +165,6 @@ function App() {
                   onClick={handleCard3}
                   style={{ cursor: "pointer" }}
                   className="showcase-panel"
-                  data-aos="flip-up"
                 >
                   <Card.Img variant="top" src={Project4} />
                   <Card.Body>
@@ -190,7 +186,6 @@ function App() {
                   onClick={handleCard4}
                   style={{ cursor: "pointer" }}
                   className="showcase-panel"
-                  data-aos="flip-up"
                 >
                   <Card.Img variant="top" src={Project5} />
                   <Card.Body>
