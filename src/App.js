@@ -16,11 +16,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// 1. https://cs1300-personas-storyboarding.pages.dev/
-// 2. https://cs1300-responsive-redesign.pages.dev/
-// 4. https://cs1300-iterative-design-ewz.pages.dev/
-// 5. https://luckylion777.github.io/project-5-development/
-
 function App() {
   // Initialize AOS
   // Source: https://michalsnik.github.io/aos/
@@ -39,11 +34,11 @@ function App() {
   };
 
   const handleCard3 = () => {
-    window.open("https://cs1300-iterative-design-ewz.pages.dev/");
+    window.open("https://cs1300-iterative-design-avo.pages.dev/");
   };
 
   const handleCard4 = () => {
-    window.open("https://luckylion777.github.io/project-5-development/");
+    window.open("https://cs1300-development.pages.dev/");
   };
 
   return (
