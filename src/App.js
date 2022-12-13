@@ -92,6 +92,8 @@ function App() {
           <h5 className="line2">
             UX design is like building a paper airplane. One's project can take
             flight with a few simple folds and a little bit of creativity.
+            Similarly, having a simple interface can take a user's experience to
+            new heights.
           </h5>
           <h5 className="line">
             “Squint at the world. You will see more, by seeing less.” ― John
@@ -107,7 +109,7 @@ function App() {
               <b>Check out some of my projects!</b>
             </h2>
             <h5 className="line" style={{ marginBottom: 30 }}>
-              Click on the cards below to see more about each project.
+              Click on the cards below to learn more about each project.
             </h5>
           </p>
           <Row xs={1} md={2} data-aos="flip-up">
