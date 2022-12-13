@@ -109,7 +109,8 @@ function App() {
               <b>Check out some of my projects!</b>
             </h2>
             <h5 className="line" style={{ marginBottom: 30 }}>
-              Click on the cards below to learn more about each project.
+              Click on the cards below to learn about the process behind each
+              project.
             </h5>
           </p>
           <Row xs={1} md={2} data-aos="flip-up">
@@ -121,11 +122,17 @@ function App() {
                     <b>Personas and Storyboarding</b>
                   </Card.Title>
                   <Card.Text>
+                    <p className="subtitle">The First Fold</p>
                     This project asked students to research a public interface
                     and analyze how users interact with it in order to design an
                     improved version. My interface of choice will be the drink
                     machines in the Ratty dining hall, which many students use
                     to dispense their beverages every day.
+                    <br />
+                    <br />
+                    Key Takeaways: I learned how to perform user research and
+                    use this information to create accurate personas to showcase
+                    my understanding of their behavior.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -138,11 +145,18 @@ function App() {
                     <b>Responsive Redesign</b>
                   </Card.Title>
                   <Card.Text>
+                    <p className="subtitle">The Second Fold</p>
                     This project asked students to follow the workflow of
                     redesigning and remaking a public website. The website I
                     chose was the official website of D&A House of Pizza, my
                     favorite local pizza place that I used to live next to.
                     Their original site had an extremely outdated design.
+                    <br />
+                    <br />
+                    Key Takeaways: I learned how to analyze a interface and use
+                    this info to create a new design that is more accessible and
+                    user-friendly, and well as turn this design into a working
+                    webpage.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -155,11 +169,17 @@ function App() {
                     <b>Iterative Design and Evaluation</b>
                   </Card.Title>
                   <Card.Text>
+                    <p className="subtitle">The Third Fold</p>
                     This project asked students to iteratively design an
                     application for a startup. My team chose Avocademy, a
                     startup dedicated to teaching people UI/UX design. They
                     offer an eight-week personalized UI/UX curriculum, mentoring
                     services, and portfolio support.
+                    <br />
+                    <br />
+                    Key Takeaways: I learned how to work with a team to design
+                    and prototype an interface through a multistage process that
+                    professional designers would utilize in the real world.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -172,11 +192,17 @@ function App() {
                     <b>Development</b>
                   </Card.Title>
                   <Card.Text>
+                    <p className="subtitle">The Fourth Fold</p>
                     This project asks students to develop a web application of
                     their choice. I chose to develop a wishlist website for
                     Genshin Impact players so they track can which characters to
                     save for. One important aspect of the site is that it pulls
                     data from the game API for easy future updates.
+                    <br />
+                    <br />
+                    Key Takeaways: I learned how to develop my own React app,
+                    incorporating key programming concepts such as components
+                    and states alongside design principles from the course.
                   </Card.Text>
                 </Card.Body>
               </Card>

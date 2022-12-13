@@ -19,6 +19,13 @@
   margin-bottom: 24px;
 }
 
+.subtitle {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  color: #818589;
+}
+
 .social {
   margin-left: 5px;
   margin-right: 5px;
